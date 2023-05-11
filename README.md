@@ -1,4 +1,4 @@
-<h1 align="center">CocaCola</h1>
+<h1 align="center">Coca Cola</h1>
 
 <p align="center">
   <a href="#-screenshots">Screenshots</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -10,7 +10,7 @@
   <p align="center"><img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000"></p>
 </p>
 
-![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=NÃP%20CONCLUIDO&color=RED&style=for-the-badge)
+![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=%20CONCLUIDO&color=GREEN&style=for-the-badge)
 
 Este é um simples exemplo de página responsiva usando HTML e CSS.
 
@@ -19,7 +19,7 @@ Este é um simples exemplo de página responsiva usando HTML e CSS.
 </h2>
 
 <p align="center">
-    <video src="./github/Page.webm"></video>
+    <img src=".github/preview.png" width="100%">
 </p>
 
 <h2>
