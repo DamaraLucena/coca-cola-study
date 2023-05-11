@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+    
+    --bg-color: linear-gradient(180deg, rgba(218, 59, 63, 0) 0%, #DA3B3F 100%), linear-gradient(180deg, #CF2425 0%, rgba(207, 36, 37, 0) 100%);;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    min-width: 36rem;
+    height: 100vh;
+
+    background: var(--bg-color);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Header */
+
+.container-header .bg-img img{
+    position: absolute;
+    padding: 1rem;
+    width: 100%;
+    
+    top: 23.1rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+    z-index: -1;
+    background-repeat: no-repeat;
+}
+
+.container-header nav{
+    display: flex;
+    align-items: center;
+    min-width: 36rem;
+    height: 10rem;
+    padding: 0 2.5rem;
+    gap: 3.2rem;
+}
+
+.container-header nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 0 1rem;
+    gap: 2rem;
+}
+
+.container-header nav ul li a{
+    text-decoration: none;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.9rem;
+    color: #FFFFFF;
+}
+
+.container-header nav ul li a:hover{
+    color: #fff;
+    opacity: 0.8;
+    
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 0.9rem;
+    padding: 0.5rem 1rem;
+}
+
+/* main */
+
+.container-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-main .text h1{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+
+    letter-spacing: 0.5rem;
+    line-height: 2rem;
+    text-align: center;
+
+    color: #fff;
+}
+
+.container-main .main-img img{
+    width: 100%;
+    height: 100%;
+}
+
+/* Media */
+
+@media (min-width: 700px){
+    :root{
+        font-size: 62.5%;
+    }
+
+    body{
+        width: 100%;
+        height: 100vh;
+
+        background: var(--bg-color);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .container-header .bg-img img{
+        width: 100%;
+        height: 100%;
+
+        padding: 1rem;
+        position: absolute;
+        top: 0;
+    
+        opacity: 0.2;
+        z-index: -1;
+        background-repeat: no-repeat;
+        filter: drop-shadow(0px 100px 30px rgba(0, 0, 0, 0.2));
+    }
+
+    /* Header */
+
+    .container-header nav {
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2.5rem;
+
+        margin: 1rem 7.5rem;
+
+        border-style: none;
+    }
+
+    .container-header nav ul li{
+        display: inline-block;
+        list-style: none;
+        gap: 2rem;
+    }
+
+    .container-header nav ul li a{
+        text-decoration: none;
+
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+        line-height: 1.9rem;
+        color: #FFFFFF;
+    }
+
+    .container-header nav ul li a:hover{
+        border-style: none;
+    }
+    
+    /* main */
+
+    .container-main{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        gap: 5rem;
+    }
+
+    .container-main .text h1{
+        display: inline-block;
+        
+        text-transform: uppercase;
+        font-style: normal;
+        font-weight: 400;
+
+        font-family: 'Poppins', sans-serif;
+
+        font-size: 5rem;
+        letter-spacing: 0.9rem;
+        line-height: 4.9rem;
+
+        background: rgba(252, 252, 252, 0.73);
+        background: -moz-linear-gradient(90deg,rgba(121,6,6,0.73) 0%, rgba(255,255,255,0) 80%);
+
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        
+        text-shadow: -5px 6px 7px rgba(255,255,255,0.93);
+
+        animation: fadeIn 5s ease-in-out;
+
+    }
+}
+
+/* Animação */
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 3;
+    }
+}
